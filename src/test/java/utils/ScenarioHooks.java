@@ -2,6 +2,7 @@ package utils;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.picocontainer.annotations.Inject;
@@ -14,7 +15,8 @@ public class ScenarioHooks {
 
     @Before
     public void beforeScenario() {
-        System.setProperty("webdriver.chrome.driver", "src/test/resources/Drivers/chromedriver");
+//        System.setProperty("webdriver.chrome.driver", "src/test/resources/Drivers/chromedriver");
+        WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
         ChromeDriver chromeDriver = new ChromeDriver(options);
