@@ -12,7 +12,7 @@ INSTRUCTIONS ON HOW TO RUN THESE TESTS
 2) Right click on POM file and select 'Build Project' to get all the dependancies
 2) To run the tests via the command line, cd to the root of the project and run:
 
--- mvn test
+-- mvn clean test
 
 ***Notes***
 
@@ -21,3 +21,5 @@ I Have set these tests up to run via github actions everytime a new push is made
 https://github.com/joe-elmoufak/SoEnergy/actions
 
 In the action workflow file "maven.yml" I have added some steps to make the test run on linux -> Download Java -> Install Chrome browser -> run tests using the test runner.
+
+Reports are stored in Target -> HTML reports file
