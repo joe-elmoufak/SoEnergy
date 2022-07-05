@@ -14,9 +14,8 @@ jobs:
         java-version: 17
         distribution: 'adopt'
     - name: Install Google Chrome # Using shell script to install Google Chrome
-    - run: |
-        export DISPLAY=:99
-        chromedriver --url-base=/wd/hub &
-        sudo Xvfb -ac :99 -screen 0 1280x1024x24 > /dev/null 2>&1 & # optional
+      run: |
+       chmod +x ./InstallChrome.sh
+        ./InstallChrome.sh
     - name: Build with Maven
       run: mvn clean test
