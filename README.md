@@ -31,3 +31,13 @@ Invest more time in better element selectors that would be less flakey (the test
 I left a thread sleep in one of the classes. Need to remove and replace with a wait condition.
 
 More asseertions. Eg when initially selecitng the product... I could store the name and price in a var and check that it matches up with the name and price in shown in the basket (more assertions like this would be good)
+
+Add a switch in the command line to choose headless or not headless running mode
+
+Add more Browsers to run the tests with
+
+Add parallel test run functionality
+
+Add automatic test rerun for failed tests
+
+Add nicer reports
