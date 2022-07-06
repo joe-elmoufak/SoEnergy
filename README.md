@@ -23,3 +23,11 @@ https://github.com/joe-elmoufak/SoEnergy/actions
 In the action workflow file "maven.yml" I have added some steps to make the test run on linux -> Download Java -> Install Chrome browser -> run tests using the test runner.
 
 Reports are stored in Target -> HTML reports file
+
+# Improvements to make
+
+Invest more time in better element selectors that would be less flakey (the test site wasnt great for hooks!)
+
+I left a thread sleep in one of the classes. Need to remove and replace with a wait condition.
+
+More asseertions. Eg when initially selecitng the product... I could store the name and price in a var and check that it matches up with the name and price in shown in the basket (more assertions like this would be good)
