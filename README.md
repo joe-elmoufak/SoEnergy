@@ -20,7 +20,7 @@ I Have set these tests up to run via github actions everytime a new push is made
 
 https://github.com/joe-elmoufak/SoEnergy/actions
 
-In the action workflow file "maven.yml" I have added some steps to make the test run on linux -> Download Java -> Install Chrome browser -> run tests using the test runner.
+In the action workflow file "maven.yml" I have added some steps to make the test run on linux -> Download Java -> Install Chrome browser via a SH script -> run tests using the test runner.
 
 Reports are stored in Target -> HTML reports file
 
